@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    overflow-y: auto;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.chessboard {
+    display: grid;
+    grid-template-rows: repeat(8, minmax(25px, 125px));
+    grid-template-columns: repeat(8, minmax(25px, 125px));
+}
+.darkSquare {
+    aspect-ratio: 1;
+    background-color: #654321;
+}
+.lightSquare {
+    aspect-ratio: 1;
+    background-color: burlywood;
+}
+.clickedSquare {
+    aspect-ratio: 1;
+    background-color: rgb(255, 157, 38);
+}
+
+@media screen and (max-width: 750px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        height: auto;
+    }
+
+    .chessboard {
+        display: grid;
+        grid-template-rows: repeat(8, minmax(25px, 125px));
+        grid-template-columns: repeat(8, minmax(25px, 125px));
+        margin-bottom: -17em;
+    }
+}
