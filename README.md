@@ -1,8 +1,5 @@
 # frontendtest
 
-## Demo Video
-
-https://www.youtube.com/watch?v=C9_qKBYdTc8
 ## Project setup
 ```
 npm install
